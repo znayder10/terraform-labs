@@ -1,0 +1,48 @@
+# Archivos de SO
+.DS_Store
+Thumbs.db
+
+# IA / Markdown / Exclusiones requeridas
+.cursor/
+*.md
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files
+*.tfvars
+*.tfvars.json
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# SSH Keys
+*.pem
+*.pub
+terraform_key.pem
+
+# AI / IDE / Agent specific files
+AGENT.md
+CLAUDE.md
+.agent-mem/
+.agent/
+.agents/
+.brainsync/
+.windsurfrules
+.cursorrules
+.ai/
