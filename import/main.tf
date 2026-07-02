@@ -4,7 +4,7 @@ resource "azurerm_virtual_network" "demo-import" {
   # basándonos en la salida de 'terraform show'.
   
   # name                = "demo-vnet-import"
-  # location            = "eastus"
+  # location            = "Mexico Central"
   # resource_group_name = "miResourceGroupImport"
   # address_space       = ["10.0.0.0/16"]
 }
