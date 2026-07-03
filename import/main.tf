@@ -5,7 +5,7 @@ resource "azurerm_virtual_network" "demo-import" {
   # Una vez importado el recurso con 'terraform import ...'
   # debemos rellenar estos valores para que coincidan con el recurso real en Azure
   # basándonos en la salida de 'terraform show'.
-  
+
   # name                = "demo-vnet-import"
   # location            = "Mexico Central"
   # resource_group_name = "miResourceGroupImport"
@@ -13,6 +13,16 @@ resource "azurerm_virtual_network" "demo-import" {
 }
 
 # ==========================================
+# OPCION 2: Importar un recurso de AWS (Instancia de Snaider)
+# ==========================================
+resource "aws_instance" "demo-import-aws" {
+  # AMI y región específicos de Snaider para us-west-1
+  # ami                         = "ami-01a694e4a87a9d197"
+  # instance_type               = "t3a.nano"
+  # associate_public_ip_address = true
+  # availability_zone           = "us-west-1a"
+  # subnet_id                   = "subnet-xxxxxxxxx"
+}
 # OPCION 2: Importar un recurso de AWS (EC2)
 # ==========================================
 # resource "aws_instance" "demo-import-aws" {

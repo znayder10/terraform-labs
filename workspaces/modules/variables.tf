@@ -1,7 +1,7 @@
 variable "res_location" {
-  type    = string
+  type = string
 }
 
 variable "repl_type" {
-  type    = string
+  type = string
 }

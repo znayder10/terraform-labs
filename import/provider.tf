@@ -3,6 +3,6 @@ provider "azurerm" {
 }
 
 # Provider opcional para AWS (usar si importas recursos de Amazon)
-# provider "aws" {
-#   region = "us-east-1"
-# }
+provider "aws" {
+  region = "us-west-1" # Región de Snaider
+}

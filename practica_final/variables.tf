@@ -9,7 +9,7 @@ variable "location" {
 variable "vm_size" {
   type = map(string)
   default = {
-    "dev"  = "Standard_B1ls"
+    "dev"  = "Standard_B1s"
     "prod" = "Standard_B1s"
   }
 }

@@ -1,0 +1,10 @@
+resource "tls_private_key" "private_key" {
+  algorithm = "RSA"
+  rsa_bits  = 2048
+}
+
+resource "local_file" "key_data" {
+  filename        = "snaider_private_key.pem"
+  content         = tls_private_key.private_key.private_key_pem
+  file_permission = "0400"
+}

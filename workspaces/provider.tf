@@ -5,6 +5,7 @@ provider "azurerm" {
 # ==========================================
 # PROVIDER OPCIONAL PARA AWS
 # ==========================================
-# provider "aws" {
-#   region = lookup(var.aws_region, terraform.workspace)
-# }
+# Provider de AWS (Descomentar cuando haya credenciales)
+provider "aws" {
+  region = lookup(var.aws_region, terraform.workspace, "us-west-1")
+}
